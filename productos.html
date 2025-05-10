@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanías Colombianas | Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Encabezado común -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo-sin-fondo.png" alt="Logo de Artesanías Colombianas"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i> (<span id="cart-count" class="cart-count">0</span>)
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="flex-grow-1 container mt-4">
+        <div class="row">
+            <!-- Columna izquierda para el catálogo de productos -->
+            <div class="col-lg-9 order-lg-1">
+                <h1 class="page-title mb-4">Nuestras Artesanías</h1>
+                
+                <!-- Catálogo de productos -->
+                <section id="catalogo" class="catalogo-grid row">
+                    <noscript>Por favor, habilita JavaScript para ver nuestros productos.</noscript>
+                </section>
+            </div>
+            
+            <!-- Columna derecha para el menú de categorías -->
+            <div class="col-lg-3 order-lg-2 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">Categorías</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="list-group list-group-flush">
+                            <!-- Categoría 1: Sombreros -->
+                            <div class="list-group-item">
+                                <button class="btn btn-link text-decoration-none w-100 text-start d-flex justify-content-between align-items-center" 
+                                        data-bs-toggle="collapse" data-bs-target="#sombrerosCollapse">
+                                    <span>Sombreros</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse show" id="sombrerosCollapse">
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">Vueltiao Tradicional</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Vueltiao Premium</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Sombrero Aguadeño</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Sombrero Pintado</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Categoría 2: Hamacas -->
+                            <div class="list-group-item">
+                                <button class="btn btn-link text-decoration-none w-100 text-start d-flex justify-content-between align-items-center" 
+                                        data-bs-toggle="collapse" data-bs-target="#hamacasCollapse">
+                                    <span>Hamacas</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse" id="hamacasCollapse">
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">Hamaca Individual</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Hamaca Doble</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Hamaca Familiar</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Hamaca con Soporte</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Categoría 3: Mochilas -->
+                            <div class="list-group-item">
+                                <button class="btn btn-link text-decoration-none w-100 text-start d-flex justify-content-between align-items-center" 
+                                        data-bs-target="#mochilasCollapse" data-bs-toggle="collapse">
+                                    <span>Mochilas</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse" id="mochilasCollapse">
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">Wayuu Pequeña</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Wayuu Mediana</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Wayuu Grande</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Arhuaca</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Categoría 4: Joyería -->
+                            <div class="list-group-item">
+                                <button class="btn btn-link text-decoration-none w-100 text-start d-flex justify-content-between align-items-center" 
+                                        data-bs-target="#joyeriaCollapse" data-bs-toggle="collapse">
+                                    <span>Joyería</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse" id="joyeriaCollapse">
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">Aretes de Tagua</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Collar de Semillas</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Pulseras Tejidas</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Anillos Artesanales</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Categoría 5: Textiles -->
+                            <div class="list-group-item">
+                                <button class="btn btn-link text-decoration-none w-100 text-start d-flex justify-content-between align-items-center" 
+                                        data-bs-target="#textilesCollapse" data-bs-toggle="collapse">
+                                    <span>Textiles</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse" id="textilesCollapse">
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">Ponchos</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Ruanas</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Mantas</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Chales</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Filtros adicionales -->
+                <div class="card shadow-sm mt-3">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">Filtrar por</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Precio</label>
+                            <select class="form-select">
+                                <option>Todos los precios</option>
+                                <option>Menos de $50.000</option>
+                                <option>$50.000 - $100.000</option>
+                                <option>$100.000 - $200.000</option>
+                                <option>Más de $200.000</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Color</label>
+                            <select class="form-select">
+                                <option>Todos los colores</option>
+                                <option>Negro</option>
+                                <option>Blanco</option>
+                                <option>Multicolor</option>
+                                <option>Natural</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-success w-100">Aplicar Filtros</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer mt-auto">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>CONÓCENOS</h3>
+                <ul>
+                    <li>HISTORIA</li>
+                    <li>CALIDAD</li>
+                    <li>LÍNEA ÉTICA</li>
+                    <li>SUPERINTENDENCIA DE INDUSTRIA Y COMERCIO</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>CONTÁCTENOS</h3>
+                <ul>
+                    <li>TRABAJA CON NOSOTROS</li>
+                    <li>¿TIENES UN LOCAL PARA NOSOTROS?</li>
+                    <li>¿QUIERES SER NUESTRO PROVEEDOR?</li>
+                    <li>ATENCIÓN AL CLIENTE</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Artesanías Colombianas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/productos.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Añade esto al final de productos.html, antes de los scripts -->
+<script type="module">
+    import { agregarAlCarrito } from './js/carrito.js';
+    
+    document.querySelectorAll('.btn-agregar-carrito').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const producto = {
+                id: this.dataset.id,
+                nombre: this.dataset.nombre,
+                precio: parseFloat(this.dataset.precio),
+                imagen: this.dataset.imagen,
+                variante: this.dataset.variante || ''
+            };
+            agregarAlCarrito(producto);
+            
+            // Mostrar notificación
+            const notificacion = document.createElement('div');
+            notificacion.className = 'alert alert-success position-fixed top-0 end-0 m-3';
+            notificacion.style.zIndex = '1000';
+            notificacion.textContent = 'Producto añadido al carrito';
+            document.body.appendChild(notificacion);
+            
+            setTimeout(() => {
+                notificacion.remove();
+            }, 2000);
+        });
+    });
+</script>
+<style>
+    .notificacion-carrito {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        animation: fadeInOut 3s ease-in-out;
+        opacity: 0;
+    }
+    
+    @keyframes fadeInOut {
+        0% { opacity: 0; transform: translateY(-20px); }
+        20% { opacity: 1; transform: translateY(0); }
+        80% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(-20px); }
+    }
+</style>
+</body>
+</html>
